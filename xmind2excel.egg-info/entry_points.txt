@@ -1,3 +1,0 @@
-[console_scripts]
-xmind2excel = xmind2excel.cli:cli_main
-
