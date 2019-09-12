@@ -5,7 +5,7 @@ python:
 - pypy
 script: echo skip test
 deploy:
-  skip_existing: true
+  skip_existing: false
   provider: pypi
   user: taoyu
   password:
@@ -15,3 +15,5 @@ deploy:
     python: 3.7
     distributions: "sdist bdist_wheel"
     repo: taoyu0429/xmid2excel
+    skip_cleanup: true
+    skip_upload_docs: true
