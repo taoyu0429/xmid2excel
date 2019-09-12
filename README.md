@@ -70,7 +70,7 @@ pip3 install -U xmind2excel
 ```
 为了应对后期项目的维护和持续优化，本项目引入了travis+github的持续集成部署模式。
 每次本地代码打上tag推送到github仓库后，travis会自动触发构建、测试、部署到pypi等操作。
-
+欢迎有志于持续改进测试流程和提高效率的小伙伴为本项目添砖加瓦。
 ```
 ### LICENSE
 ```
