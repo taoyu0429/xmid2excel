@@ -52,6 +52,8 @@ pip3 install xmind2excel
  xmind2testcase [path_to_xmind_file] [-xlsx]
 ```
 #### 4、在模版同目录下查看excel结果
+![xmind-demo](https://github.com/taoyu0429/xmid2excel/blob/master/result-demo.png?raw=true)
+
 
 ### 五、版本升级
 ```
@@ -64,7 +66,12 @@ pip3 install -U xmind2excel
 - 1、**[XMind](https://github.com/zhuifengshen/xmind)**：XMind思维导图创建、解析、更新的一站式解决方案(Python实现)！  
 - 2、**[xmind2testcase](https://github.com/zhuifengshen/xmind2testcase)**：践行了XMind通用测试用例模板设计思路，同时提供了Web转换工具！
 
+### 七、持续集成部署
+```
+为了应对后期项目的维护和持续优化，本项目引入了travis+github的持续集成部署模式。
+每次本地代码打上tag推送到github仓库后，travis会自动触发构建、测试、部署到pypi等操作。
 
+```
 ### LICENSE
 ```
 MIT License
