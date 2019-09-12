@@ -5,6 +5,14 @@ language: python
 	- pypy
 	script: echo skip test
 	deploy:
+=======
+python:
+- '2.7'
+- '3.3'
+- pypy
+script: echo skip test
+deploy:
+>>>>>>> parent of 314ead8... Update .travis.yml
   skip_existing: true
   provider: pypi
   user: taoyu
