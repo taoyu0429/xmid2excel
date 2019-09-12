@@ -22,7 +22,7 @@
 - 4、...
 
 ### 二、设计思路
-综合以上的优劣情况，我们能不能将xmind 和 excel 结合起来。在提升效率的同时，兼顾到实用的效果。
+综合以上的优劣情况，我们能不能将xmind 和 excel 结合起来。在提升效率的同时，兼顾到实用的效果
 
 ## 我的设计思路是这样的：
 ![flowchart](https://github.com/taoyu0429/xmid2excel/blob/master/flowchart.png?raw=true)
