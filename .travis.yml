@@ -5,7 +5,7 @@ python:
 - pypy
 script: echo skip test
 deploy:
-  skip_existing: false
+  skip_existing: true
   provider: pypi
   user: taoyu
   password:
