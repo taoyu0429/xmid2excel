@@ -1,18 +1,17 @@
 language: python
-python:
-- '3.7'
-- pypy3
-script: echo skip test
-deploy:
+	python:
+	- '2.7'
+	- '3.7'
+	- pypy
+	script: echo skip test
+	deploy:
   skip_existing: true
   provider: pypi
   user: taoyu
   password:
     secure: HivAsinuczFZ1OoyfMxCIiQVzE5LZvJmYKhVQxOCGJNQVqvTrv58WmKnO91OGBMdN7FzfoSSUotwyOxBNVrzN2Q+m4z3FgkBIVbSzJRw/FcfN7WYPTiiXAWM7La59HUn+0PKlSljqc5wKoh0DEy0ySfPxv96OOW3JEBDxfnRsDs64yf9T5Xv1CEevGgZa/Ysf9vOQ5q8ZFtV6b2yuboRVRgIuNUI390UNo4abc7arypc/Mv9mo4fIhSOBBv6OdmnY/CJ959Q99szbpxi7DEBmoQqIRJc8JliqgmAhWAErE1z74MlZPbBa/QQBVWqRCqSB4Y68UvFQFh/TGs0mP6ZzlTc5Cu6o1aPcNMGTPpyOsGzOuLyW9DVoyoHCOpVVqcZoKlm0LdsTlTqOCaUki9IJxT0FQJQ6ERqiP1KMH742Eo9tH5tA47GYIcC9Zgkjwcj2LIUN7CHtftbUKxEg/PWgfmeymmy/7QCWJSYg0QJlHbItejFPCBU2HIkNYdsB+4L4Jom9HYu4VdQSTQWolNQ6GPpgFqXO7y3+lQWd9VIKsXGXC0nZiJIsKPUB74FQDlkXP7RbMbggtsEDkKr56wohWpHM2hETA3kRhdscvV68KpG8okTogHGMjjV3P6HJo63AZJIqq6djq/pBP/I4DVKO8B5Yg+zYA7tPJvaC8nXtkY=
-  on:	
-    branch: master
-    python: 3.7
+  on:
     tags: true
+    python: 3.7
     distributions: sdist bdist_wheel
     repo: taoyu0429/xmid2excel
-		
