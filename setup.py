@@ -27,7 +27,7 @@ setuptools.setup(
     author=about['__author__'],
     author_email=about['__author_email__'],
     url=about['__url__'],
-    packages=setuptools.find_packages(exclude=['xmind2excel', 'xmind.*', 'docs']),  # custom
+    packages=setuptools.find_packages(exclude=['xmind.*', 'docs']),  # custom
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
