@@ -1,6 +1,6 @@
-# XMind2Excel
+# XMind2Xls
 
-> **XMind2Excel** 工具，提供了从思维导图格式转换成Excel格式的解决方案
+> **XMind2Xls** 工具，提供了从思维导图格式转换成Excel格式的解决方案
 
 
 ### 一、背景
@@ -35,9 +35,9 @@
 #### 1、安装python
 https://jingyan.baidu.com/article/25648fc19f61829191fd00d4.html
 
-#### 2、运行命令行安装xmind2excel
+#### 2、运行命令行安装xmind2xls
 ```
-pip3 install xmind2excel
+pip3 install xmind2xls
 ```
 
 ### 四、使用方式
@@ -49,7 +49,7 @@ pip3 install xmind2excel
 
 #### 3、运行命令行
 ```
- xmind2excel [path_to_xmind_file] [-xlsx]
+ xmind2xls [path_to_xmind_file] [-xlsx]
 ```
 #### 4、在模版同目录下查看excel结果
 ![xmind-demo](https://github.com/taoyu0429/xmid2excel/blob/master/result-demo.png?raw=true)
@@ -57,11 +57,11 @@ pip3 install xmind2excel
 
 ### 五、版本升级
 ```
-pip3 install -U xmind2excel
+pip3 install -U xmind2xls
 
 ```
 ### 六、致谢
-**XMind2Excel** 工具的产生，受益于以下两个开源项目，并在此基础上扩展、优化。
+**XMind2Xls** 工具的产生，受益于以下两个开源项目，并在此基础上扩展、优化。
 
 - 1、**[XMind](https://github.com/zhuifengshen/xmind)**：XMind思维导图创建、解析、更新的一站式解决方案(Python实现)！  
 - 2、**[xmind2testcase](https://github.com/zhuifengshen/xmind2testcase)**：践行了XMind通用测试用例模板设计思路，同时提供了Web转换工具！

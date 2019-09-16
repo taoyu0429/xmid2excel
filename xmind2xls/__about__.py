@@ -4,6 +4,6 @@ __keywords__ = 'Xmind2Xlsx, testcase, test, testing, xmind, 思维导图, XMind�
 __author__ = 'taoyu'
 __author_email__ = '1126931536@qq.com'
 __url__ = 'https://github.com/taoyu0429/xmid2excel'
-__version__ = '1.0.3'
+__version__ = '1.0.0'
 __license__ = 'MIT'
 
