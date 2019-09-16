@@ -3,7 +3,7 @@ import datetime
 import os
 import xmind
 import logging
-from xmind2excel.utils import get_xmind_testcase_list, get_absolute_path
+from xmind2xls.utils import get_xmind_testcase_list, get_absolute_path
 
 def xmind_to_xlsx_file(xmind_file):
     """Convert XMind file to a excel xlsx file"""

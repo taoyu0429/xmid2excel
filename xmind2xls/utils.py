@@ -5,7 +5,7 @@ import os
 import xmind
 import logging
 
-from xmind2excel.parser import xmind_to_testsuites
+from xmind2xls.parser import xmind_to_testsuites
 
 def get_absolute_path(path):
     """

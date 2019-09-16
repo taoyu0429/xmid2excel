@@ -4,10 +4,10 @@
 
 import logging
 import sys
-from xmind2excel.zentao import xmind_to_zentao_csv_file
-from xmind2excel.testlink import xmind_to_testlink_xml_file
-from xmind2excel.excel import xmind_to_xlsx_file
-from xmind2excel.utils import get_absolute_path, xmind_testcase_to_json_file
+from xmind2xls.zentao import xmind_to_zentao_csv_file
+from xmind2xls.testlink import xmind_to_testlink_xml_file
+from xmind2xls.excel import xmind_to_xlsx_file
+from xmind2xls.utils import get_absolute_path, xmind_testcase_to_json_file
 
 
 logging.basicConfig(level=logging.INFO,

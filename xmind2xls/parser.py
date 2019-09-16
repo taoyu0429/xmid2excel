@@ -2,7 +2,7 @@
 # _*_ coding:utf-8 _*_
 
 import logging
-from xmind2excel.metadata import TestSuite, TestCase, TestStep
+from xmind2xls.metadata import TestSuite, TestCase, TestStep
 
 
 config = {'sep': ' ',

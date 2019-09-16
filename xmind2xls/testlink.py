@@ -2,7 +2,7 @@
 # _*_ coding:utf-8 _*_
 import logging
 import os
-import xmind2excel.const
+import xmind2xls.const
 from io import BytesIO
 from xml.dom import minidom
 from xml.sax.saxutils import escape
