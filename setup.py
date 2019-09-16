@@ -38,7 +38,7 @@ setuptools.setup(
 
     entry_points={  # custom
         'console_scripts': [
-            'xmind2excel=xmind2excel.cli:cli_main',
+            'xmind2xls=xmind2xls.cli:cli_main',
         ]
     }
 
