@@ -7,7 +7,7 @@ import setuptools
 
 about = {}
 here = os.path.abspath(os.path.dirname(__file__))
-with io.open(os.path.join(here, 'xmind2excel', '__about__.py'), encoding='utf-8') as f:  # custom
+with io.open(os.path.join(here, 'xmind2xls', '__about__.py'), encoding='utf-8') as f:  # custom
     exec(f.read(), about)
 
 with io.open('README.md', encoding='utf-8') as f:
