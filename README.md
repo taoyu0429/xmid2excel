@@ -37,7 +37,7 @@ https://jingyan.baidu.com/article/25648fc19f61829191fd00d4.html
 
 #### 2、运行命令行安装xmind2excel
 ```
-pip3 install xmind2excel
+pip3 install xmind2xlsx
 ```
 
 ### 四、使用方式
