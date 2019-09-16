@@ -10,9 +10,9 @@ deploy:
   user: taoyu
   password:
     secure: O4kvlP1olaxbN+/Y2Ic0zQtpPj/AOGVkhdzHm7u7nDFsfV4m98mWQZnZXFo4VXUVbi2VwHoclOwqLC8RKsXvrO8ivbvRToOnq1Y+K6Qi44oPOaEqLagkDPhzlst4cLp1yUSILsJS8153N3zYFZ7dvIbDjytDmpPcvce7u0pffqmWaHefDohkxS6VAYzaGFHifHJDjQoDsbSP7DOvcXqchBvZfzFKd6zGNNskDjNZ1gDNlcRc6SCI0kLA/qYVnN1WYVCn4VgaFrlIokdQuM1K0HeGAVgIMQIG0YiDrlCKGlUF/Jr4DmaHOL+TnQVeNx4koi1NIXtdK2d6+YkblSWhOlZ88RvWKpyGoYtuRSqffErSYbByk1w7crh3htEM6h35e0epUTnpZmC0ehwvpdfldRZepqyi7XoV2enoDT7/fvEXb9Z2uibwH4lEzjOPpr+8W5ahPldfXAcwW/i5Zh+YAsApf4kcLFLcD/JgeQdUt2h2TjVddqFyIS5H/bfiX7OOgb++u0sntW8LN9L9m1t+bl8XKwA29PEEOegT/7g2aWYqDWOcWmpyh6k6jAFIMaS8Zmn8BUrlVhUNz7qhcXFTFGjQxzzPETJSojDVYDwS07RQL7ViDwNn7WSSQyrGRBjxSdsWJV44ZPwHmXbFysgD3ib54zfvAFOUWGuPMcv1gV0=
+  distributions: "sdist bdist_wheel"
   on:
     tags: true
     python: 3.7
-    distributions: bdist_wheel
     repo: taoyu0429/xmid2excel
-    skip_upload_docs: true
+
