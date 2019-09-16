@@ -1,1 +1,1 @@
-name = "xmind2excel1.0"
+name = "xmind2xls"
