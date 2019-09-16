@@ -37,7 +37,7 @@ https://jingyan.baidu.com/article/25648fc19f61829191fd00d4.html
 
 #### 2、运行命令行安装xmind2excel
 ```
-pip3 install xmind2xlsx
+pip3 install xmind2excel
 ```
 
 ### 四、使用方式
@@ -49,7 +49,7 @@ pip3 install xmind2xlsx
 
 #### 3、运行命令行
 ```
- xmind2testcase [path_to_xmind_file] [-xlsx]
+ xmind2excel [path_to_xmind_file] [-xlsx]
 ```
 #### 4、在模版同目录下查看excel结果
 ![xmind-demo](https://github.com/taoyu0429/xmid2excel/blob/master/result-demo.png?raw=true)
