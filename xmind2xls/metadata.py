@@ -43,7 +43,7 @@ class TestSuite(object):
 
 class TestCase(object):
 
-    def __init__(self, name='', version=1, summary='', preconditions='', execution_type=1, importance=2, estimated_exec_duration=3, status=7, result=0, steps=None, module='', function='', checkpoint=''):
+    def __init__(self, id='', name='', version=1, summary='', preconditions='', execution_type=1, importance=2, estimated_exec_duration=3, status=7, result=0, steps=None, module='', function='', checkpoint=''):
         """
         TestCase
         :param name: test case name
@@ -60,6 +60,7 @@ class TestCase(object):
         :param function: test case is designed for verification which function in program
         :param checkpoint: check the detail of function
         """
+        self.id = id
         self.name = name
         self.version = version
         self.summary = summary
@@ -77,6 +78,7 @@ class TestCase(object):
 
     def to_dict(self):
         data = {
+            'id': self.id,
             'name': self.name,
             'version': self.version,  # TODO(devin): get version content
             'summary': self.summary,

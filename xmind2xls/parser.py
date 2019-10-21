@@ -158,6 +158,7 @@ def recurse_parse_testcase(case_dict, parent=None):
         parent.append(case_dict)
 
         for child_dict in case_dict.get('topics', []):
+            i = 1
             for case in recurse_parse_testcase(child_dict, parent):
                 yield case
 
@@ -183,7 +184,7 @@ def parse_a_testcase(case_dict, parent):
 
     testcase.module = parent[0]['title']
     testcase.function = parent[1]['title']
-
+    testcase.id = parent[1]['note']
     testcase.name = gen_testcase_title(topics)
 
     testcase.checkpoint = case_dict['title']
@@ -192,8 +193,11 @@ def parse_a_testcase(case_dict, parent):
     testcase.preconditions = preconditions if preconditions else '无'
 
     summary = gen_testcase_summary(topics)
-    testcase.summary = summary if summary else testcase.name
-
+    """
+     testcase.summary = summary if summary else testcase.name
+    """
+    testcase.summary = ""
+    testcase.execution_type = get_execution_type(case_dict)
     testcase.importance = get_priority(case_dict) or 2
 
     step_dict_list = case_dict.get('topics', [])
@@ -226,10 +230,16 @@ def get_priority(case_dict):
             if marker.startswith('priority'):
                 return int(marker[-1])
 
+def get_execution_type(case_dict):
+    if isinstance(case_dict['markers'], list):
+        marker = case_dict['markers'][1]
+        if marker == "arrow-up":
+            return "正例"
+        else: return "反例"
 
 def gen_testcase_title(topics):
     """Link all topic's title as testcase title"""
-    titles = [topic['title'] for topic in topics]
+    titles = [topic['title'] for topic in topics[0:2]]
     titles = filter_empty_or_ignore_element(titles)
 
     # when separator is not blank, will add space around separator, e.g. '/' will be changed to ' / '
@@ -245,15 +255,17 @@ def gen_testcase_title(topics):
 
 
 def gen_testcase_preconditions(topics):
-    notes = [topic['note'] for topic in topics]
+    notes = [topic['comment'] for topic in topics]
     notes = filter_empty_or_ignore_element(notes)
     return config['precondition_sep'].join(notes)
 
 
 def gen_testcase_summary(topics):
+
     comments = [topic['comment'] for topic in topics]
     comments = filter_empty_or_ignore_element(comments)
     return config['summary_sep'].join(comments)
+
 
 
 def parse_test_steps(step_dict_list):

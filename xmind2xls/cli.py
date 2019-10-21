@@ -16,6 +16,13 @@ logging.basicConfig(level=logging.INFO,
 
 def cli_main():
 
+
+    """
+    sys.argv = ["xmind2xls", "/Users/ytao/Desktop/xietongpingtai.xmind", "-xlsx"]
+    :return: param
+    """
+
+
     if len(sys.argv) > 1 and sys.argv[1].endswith('.xmind'):
         xmind_file = sys.argv[1]
         xmind_file = get_absolute_path(xmind_file)
